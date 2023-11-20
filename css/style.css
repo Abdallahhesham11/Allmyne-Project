@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: white;
+font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    height: 80px;
+    background-color: #F6F6F7;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 1px 1px 20px #23B42E;
+}
+.nav-hr{
+    height: 40px;
+    width: 1px;
+    background-color: #071C3C;
+}
+.search{
+    width: 250px;
+}
+.nav-link:hover{
+transform: scale(1.2,1.2);
+text-shadow: 1px 1px 5px #23B42E;
+}
+.nav-link:hover .nav-shadow{
+color: #23B42E;
+}
+.btn-nav:hover{
+    opacity: 0.9;
+}
+.modal-header{
+    background-color: #071C3C;
+}
+.btn-login{
+    background-color:#071C3C;
+}
+.carousel-caption{
+    background-color: rgba(7, 28, 60, 0.8);
+    border-radius: 10px;
+}
+.header-icons:hover{
+    opacity: 0.8;
+}
+.card-body{
+    background-color: #071C3C;
+    height: auto;
+    padding: 20px 30px;
+    margin-top: -1px;
+}
+.card-btn{
+    margin-top: 5px;
+   font-size: 22px;
+  background-color: #071C3C;
+  border: 2px solid white;
+  font-size: 24px;
+  color: white;
+}
+.card-btn:hover{
+    background-color: white;
+    color: #071C3C;
+}
+.card-title{
+    color:#23B42E;
+}
+.accordion-span{
+    color: #23B42E;
+}
+.link-outline{
+    transition: 0.4;
+}
+.link-outline:hover{
+    opacity: 0.7;
+}
+.btn-copy{
+    background-color: #071C3C;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+}
+.custom-tooltip{
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white)
+}
+.logo-img{
+    background-image: url(../images/logo1.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    height: 300px;
+}
+.z{
+    background-image: url(../images/logo2\ \(2\).jpg);
+}
+.destination-card{
+    position: relative;
+    box-shadow: 0px 0px 5px 0px #071C3C;
+}
+.destination-card::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #071C3C;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+}
+.btn-destination:hover{
+background-color: white;
+color: #071C3C;
+}
+.destination-card:hover::after{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 10px;
+}
+.destination-card::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #071C3C;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+}
+.destination-card:hover::before{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 10px;
+}
+.card-bodyy{
+    z-index: 100;
+}
+.thank-card{
+    background-image: linear-gradient(rgba(7, 28, 60, 0.8),rgba(7, 28, 60, 0.8)),url(../images/person.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.bb{
+    background-image: linear-gradient(rgba(7, 28, 60, 0.8),rgba(7, 28, 60, 0.8)),url(../images/pexels-spencer-selover-775358.jpg);
+}
+.cc{
+    background-image: linear-gradient(rgba(7, 28, 60, 0.8),rgba(7, 28, 60, 0.8)),url(../images/pexels-andrea-piacquadio-774909.jpg);
+}
+.thank-card:hover{
+    transform: scale(0.9,0.9);
+}
+.thank-card-desc{
+    margin-top: 150px;
+}
+.thank-card-desc img{
+    border-radius: 50%;
+    border: solid 3px grey;
+    margin-bottom: 5px;
+}
+.thank-card-text-desc{
+    margin-top: -15px;
+}
+.thank-card-content{
+    transition: 0.4s;
+}
+.thank-card:hover .thank-card-content{
+    margin-top: 20px;
+}
+.podcast-item-overley{
+    transition: 0.5s;
+}
+.podcast-content:hover .podcast-item-overley{
+    transform: scaleX(1.5);
+}
+.podcast-content{
+    box-shadow: 1px 1px 15px 2px #071C3C;
+}
+.join-item{
+    box-shadow: 1px 1px 15px 2px #071C3C;
+    border-radius: 5px;
+    background-color: #F6F6F7;
+}
+.join-img a i{
+    width: 100%;
+    height: 100%;
+    background-color: #071C3C;
+    color: #D7DBCA;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.join-img a i:hover{
+    box-shadow: 1px 1px 30px 1px #071C3C;
+}
+footer{
+    background-color: #071C3C;
+}
+.footer-second-ul li a{
+    text-decoration: none;
+    color: #C5DCFF;
+    transition: 0.4s;
+}
+.footer-second-ul li a:hover{
+    color: #23B42E;
+}
+.footer-second-ul{
+    margin-left: -30px;
+}
+.footer-third-icons{
+    font-size: 21px;
+}
+.footer-third-icons a i{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    padding-top: 10px;
+    background-color: #004E59;
+}
+.footer-third-icons a i:hover{
+    opacity: 0.9;
+}
+.btn-footer{
+    background-color: #071C3C;
+    border: 4px solid white;
+    border-radius: 30px;
+    font-size: 24px;
+    color: white;
+}
+.btn-footer:hover{
+    background-color: white;
+    color: #071C3C;
+    text-decoration: underline;
+}
